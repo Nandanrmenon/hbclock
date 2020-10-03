@@ -16,7 +16,7 @@ class ElapsedTime {
 class Dependencies {
 
   final List<ValueChanged<ElapsedTime>> timerListeners = <ValueChanged<ElapsedTime>>[];
-  final TextStyle textStyle = const TextStyle(fontSize: 40.0, color: Colors.white);
+  final TextStyle textStyle = const TextStyle(fontSize: 50.0, color: Colors.white);
   final Stopwatch stopwatch = new Stopwatch();
   final int timerMillisecondsRefreshRate = 30;
 }
@@ -55,6 +55,7 @@ class StopWatchState extends State<StopWatch> {
     return new FloatingActionButton(
         backgroundColor: Theme.of(context).accentColor,
         elevation: 0.7,
+        splashColor: Color(0xff394259),
         child: new Text(text, style: roundTextStyle),
         onPressed: callback);
   }

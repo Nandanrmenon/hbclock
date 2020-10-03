@@ -23,13 +23,14 @@ class _ClockState extends State<Clock> {
         child: AnalogClock(
           decoration: BoxDecoration(
               border: Border.all(width: 2.0, color: Colors.transparent),
-              color: Color(0xff546182),
+              color: Color(0xff546184),
               shape: BoxShape.circle),
           width: 250.0,
           isLive: true,
           hourHandColor: Colors.white,
           minuteHandColor: Colors.white,
           showSecondHand: true,
+          secondHandColor: Theme.of(context).accentColor,
           numberColor: Colors.white,
           showNumbers: true,
           textScaleFactor: 1.4,

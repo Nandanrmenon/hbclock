@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Clock',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Clock'),
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: new PageView(
         children: [
           new Clock(),
-          new Timer(),
+          new TimerPage(),
           new StopWatch(),
         ],
         onPageChanged: onPageChanged,

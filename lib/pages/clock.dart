@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'package:intl/intl.dart';
 import 'package:analog_clock/analog_clock.dart';
 
 class Clock extends StatefulWidget {

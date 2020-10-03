@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hbclock/pages/clock.dart';
 import 'package:hbclock/pages/stopwatch.dart';
 import 'package:hbclock/pages/timer.dart';
-import 'dart:async';
-import 'package:intl/intl.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   PageController _pageController;
   int _page = 0;
 
@@ -79,13 +76,10 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.blue,
         items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.access_time), label: "Clock"),
+          BottomNavigationBarItem(icon: Icon(Icons.alarm), label: "Timer"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.access_time,), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.alarm),
-              label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.hourglass_bottom),label: ""),
+              icon: Icon(Icons.hourglass_bottom), label: "Stopwatch"),
         ],
         onTap: navigationTapped,
         type: BottomNavigationBarType.fixed,

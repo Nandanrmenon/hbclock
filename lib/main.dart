@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hbclock/pages/clock.dart';
 import 'package:hbclock/pages/stopwatch.dart';
 import 'package:hbclock/pages/timer.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Color(0xff394259), // navigation bar color// status bar color
+  ));
 }
 
 class MyApp extends StatelessWidget {
